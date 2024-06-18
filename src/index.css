@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hero *,
+.allies *,
+.easy *,
+.start * {
+  overflow: hidden;
+}
+
+.title {
+  font-family: "DM Serif Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  background: 0;
+  padding: 0.5em 1.5em;
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: 250ms;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.flow-content--s > * + * {
+  margin-top: 0.5rem !important;
+}
+.flow-content--m > * + * {
+  margin-top: 1rem !important;
+}
+.flow-content--xm > * + * {
+  margin-top: 1.5rem !important;
+}
+.flow-content--l > * + * {
+  margin-top: 3rem !important;
+}
+.flow-content--xl > * + * {
+  margin-top: 3.5rem !important;
+}
+
+.specialLogo {
+  @apply font-bold text-2xl;
+}
+
+.main-btn {
+  @apply px-12 py-2 rounded-full bg-pink-600 text-white duration-200;
+}
+.main-btn:hover {
+  @apply bg-pink-500 cursor-pointer text-white;
+}
+
+.secondary-btn {
+  @apply px-12 py-2 rounded-full bg-transparent text-white duration-200 border-2 border-white hover:bg-white hover:text-black hover:border-black;
+}
+
+.main-nav .link {
+  @apply text-[#6c8294] hover:text-[#1b262f] duration-300;
+}
