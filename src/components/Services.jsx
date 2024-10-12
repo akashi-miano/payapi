@@ -4,9 +4,9 @@ import cardData from "../../public/cardData";
 const Services = () => {
   return (
     <section className="py-24">
-      <div className="container grid md:grid-cols-3">
+      <div className="container grid md:grid-cols-3 gap-4">
         {cardData.map(({ img, title, description }, idx) => (
-          <Card img={img} title={title} description={description} />
+          <Card key={idx} img={img} title={title} description={description} />
         ))}
       </div>
     </section>

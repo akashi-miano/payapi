@@ -1,5 +1,5 @@
 import logo from "./Group 3.png";
-import heroImg from "./Group 2.png";
+import heroImg from "./phone.svg";
 import msg from "./Group 29.png";
 import allies from "./allies.png";
 import code from "./Group 14.svg";

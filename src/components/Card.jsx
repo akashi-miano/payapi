@@ -11,8 +11,12 @@ const Card = ({ img, title, description }) => {
         />
       </div>
       <header className="flow-content--s">
-        <h3 className="card__title text-lg font-bold">{title}</h3>
-        <p className="card__description">{description}</p>
+        <h3 className="card__title text-lg font-bold text-[#36536B]">
+          {title}
+        </h3>
+        <p className="card__description text-[#6C8294] max-w-[450px] mx-auto">
+          {description}
+        </p>
       </header>
     </div>
   );
