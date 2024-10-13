@@ -9,5 +9,6 @@ import icon1 from "./Group 17.png";
 import icon2 from "./Group 18.png";
 import icon3 from "./Group 19.png";
 import footerLogo from "./Group 22.png";
+import sponsors from "./sponsors.png"
 
-export {logo, heroImg, msg, allies, code, phone2, phone3, icon1, icon2, icon3, footerLogo}
+export {logo, heroImg, msg, allies, code, phone2, phone3, icon1, icon2, icon3, footerLogo, sponsors}

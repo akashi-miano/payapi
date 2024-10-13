@@ -34,9 +34,9 @@ const Nav = () => {
               </Link>
             </li>
             <li className="flex items-center">
-              <a href="" className="link">
+              <Link to="/contacts" className="link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="mobile-menu">
@@ -58,9 +58,9 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <a href="" className="link text-4xl text-[#FBFCFE]">
+                <Link to="/contacts" className="link text-4xl text-[#FBFCFE]">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="" className="main-btn">
