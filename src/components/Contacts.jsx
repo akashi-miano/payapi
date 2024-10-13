@@ -84,7 +84,7 @@ const Contacts = () => {
                   Input a valid email address!
                 </span>
               </div>
-              <div className="">
+              <div className="mb-4">
                 <input
                   type="text"
                   id="cn"
@@ -93,7 +93,7 @@ const Contacts = () => {
                   {...register("company")}
                 />
               </div>
-              <div className="">
+              <div className="mb-4">
                 <input
                   type="text"
                   id="title"
@@ -107,7 +107,7 @@ const Contacts = () => {
                   name="message"
                   id="message"
                   placeholder="Message"
-                  className="w-full border-b p-2 border-gray-400 min-h-[150px] max-h-[250px] vertical"
+                  className="w-full border-b p-2 border-gray-400 min-h-[100px] max-h-[150px] vertical"
                   {...register("message")}
                 ></textarea>
                 <span
@@ -133,12 +133,16 @@ const Contacts = () => {
             </form>
             <div className="flow-content--m">
               <header>
-                <h2 className="text-[#36536B] max-w-[400px] text-2xl !font-medium title text-center md:text-left">
+                <h2 className="text-[#36536B] max-w-[400px] text-2xl !font-medium title text-center md:text-left mx-auto md:mx-0">
                   Join the thousands of innovators already building with us
                 </h2>
               </header>
               <div className="img-wrapper">
-                <img src={sponsors} alt="List of sponsors" />
+                <img
+                  src={sponsors}
+                  className="block mx-auto md:mx-0"
+                  alt="List of sponsors"
+                />
               </div>
             </div>
           </div>

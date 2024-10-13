@@ -2,6 +2,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { footerLogo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,38 +10,43 @@ const Footer = () => {
       <div className="container flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div className="logo-wrapper flex flex-col sm:flex-row items-center gap-3 sm:gap-8">
           <div className="wrapper flex gap-2">
-            <img src={footerLogo} alt="PayAPI's Logo" />
-            <a
-              href="#"
-              className="text-xl font-thin min-h-[38px] flex items-center md:inline"
+            <Link
+              to="/"
+              className="text-xl font-thin min-h-[38px] text-[#36536B] flex items-center gap-4"
             >
-              <span className="font-bold">pay</span>api
-            </a>
+              <img src={footerLogo} className="w-[30px] h-[30px]" alt="logo" />
+              <p className="text-white">
+                <span className="specialLogo text-xl font-thin min-h-[38px] flex items-center md:inline text">
+                  pay
+                </span>
+                api
+              </p>
+            </Link>
           </div>
           <ul className="footer__links flex flex-col sm:flex-row items-center gap-4 my-2 sm:my-0 sm:ml-8">
-            <li>
-              <a
-                href=""
+            <li className="flex items-center">
+              <Link
+                to="/pricing"
                 className="text-gray-300 hover:text-[#fbfcfe] duration-300"
               >
                 Pricing
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                href=""
+            <li className="flex items-center">
+              <Link
+                to="/about"
                 className="text-gray-300 hover:text-[#fbfcfe] duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
-            <li>
-              <a
-                href=""
+            <li className="flex items-center">
+              <Link
+                to="/contacts"
                 className="text-gray-300 hover:text-[#fbfcfe] duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

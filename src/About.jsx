@@ -4,11 +4,10 @@ import Objectives from "./components/Objectives";
 import Start from "./components/Start";
 import TeamCard from "./components/TeamCard";
 import team from "../public/team";
+import Culture from "./components/Culture";
+import culture from "../public/culture";
 
 const About = () => {
-  {
-    console.log(team);
-  }
   return (
     <>
       <Nav />
@@ -22,11 +21,18 @@ const About = () => {
               </h1>
             </header>
             <Objectives />
-            <div className="wrapper grid md:grid-cols-3 gap-6">
+            <div className="img-wrapper">
+              <img
+                src={culture}
+                alt="Bunch of people working to together in a cafe."
+              />
+            </div>
+            <div className="wrapper grid md:grid-cols-3 gap-6 my-12">
               {team.map(({ title, count }, idx) => (
                 <TeamCard title={title} count={count} key={idx} />
               ))}
             </div>
+            <Culture />
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ const Ui = () => {
           <img src={phone3} alt="Phone Image`" />
         </div>
         <div className="text-wrapper order-[-1]">
-          <header className="flow-content--m z-[2] text-center md:text-0">
+          <header className="flow-content--m z-[2] text-center md:text-left">
             <h2 className="title text-5xl text-[#36536B]">Simple UI & UX</h2>
             <p className="description text-[#6C8294] max-w-[450px] mx-auto md:mx-0">
               Our pre-built form is easy to integrate in your app or website’s
